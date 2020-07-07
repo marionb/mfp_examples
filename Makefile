@@ -16,6 +16,11 @@ git-attributes:
 serve:
 	docker-compose up --build --remove-orphans -d
 
+## down		:			Stops containers and removes containers, networks, volumes, and images created by up
+.PHONY: down
+down:
+	docker-compose down
+
 ## generate-simple-pdf	:	generate a PDF file with a simple ExpectedResult.pdf. needs to be done in the folder of the spec
 .PHONY: generate-simple-pdf
 generate-simple-pdf:

@@ -3,7 +3,9 @@ transparentTileErrorColor: "rgba(78, 78, 255, 125)"
 opaqueTileErrorColor: "rgba(255, 155, 155, 0)"
 
 templates:
+  #===========================================================================
   A4 portrait: !template
+  #===========================================================================
     reportTemplate: report.jrxml
     attributes:
       title: !string
