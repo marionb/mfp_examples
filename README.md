@@ -13,7 +13,15 @@ http://mapfish.github.io/mapfish-print-doc/
 3. To see all the oprions run
     `$ make`
 
-
+# See the logs:
+To show the logs run:
+```
+docker-compose logs -f print
+```
+Enter the print container:
+```
+docker exec -it <name_of_cntainer> bash
+```
 # What it does
 
 - This pulls a docker image with a MFP image and runs it.
@@ -24,6 +32,6 @@ http://mapfish.github.io/mapfish-print-doc/
 - This is intended to generate a simple application to play with MFP. To do so you can modify the config and the templates in:
     - [config.yaml](print-apps/simple/config.yaml)
     - [report.jrxml](print-apps/simple/report.jrxml)
-    
+
 There are also mire instructions and information in this presentation:
 https://marionb.github.io/mfp_AGIT_2020/mfp_AGIT_2020.html
